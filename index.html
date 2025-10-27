@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les différents types d'IA : comparaison</title>
+    <title>The different types of AI: comparison</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
     <style>
@@ -90,120 +90,117 @@
 <body>
     <div class="container mx-auto">
         <header class="text-center my-10">
-            <h1 class="text-4xl font-bold mb-4">Les différents types d'IA : comparaison</h1>
-            <p class="text-xl text-gray-600 mb-8">Une analyse des trois principaux modèles d'intelligence artificielle et leurs applications</p>
+            <h1 class="text-4xl font-bold mb-4">The different types of AI: comparison</h1>
+            <p class="text-xl text-gray-600 mb-8">An analysis of the three main artificial intelligence models and their applications</p>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            <!-- I/O Models -->
             <div class="ai-card io-color p-6">
                 <div class="flex flex-col items-center mb-4">
                     <div class="icon-container io-icon">
                         <i class="fas fa-exchange-alt text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center">Modèles I/O</h2>
+                    <h2 class="text-2xl font-bold text-center">I/O Models</h2>
                     <p class="text-sm text-gray-600 text-center">(Input/Output)</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Définition</h3>
-                    <p class="feature-content">Les modèles les plus simples dans leur fonctionnement. Ils reçoivent une entrée et produisent directement une sortie sans étape intermédiaire visible.</p>
+                    <h3 class="feature-title">Definition</h3>
+                    <p class="feature-content">The simplest models in their operation. They receive an input and directly produce an output without a visible intermediate step.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Fonctionnement</h3>
+                    <h3 class="feature-title">Operation</h3>
                     <div class="bg-white p-3 rounded-lg shadow-sm mb-2">
-                        <p class="text-center font-medium">Question → Réponse directe</p>
+                        <p class="text-center font-medium">Question → Direct Answer</p>
                     </div>
-                    <p class="feature-content">Prédiction des mots les plus probables en fonction de l'entrée fournie, sans réflexion intermédiaire explicitée.</p>
+                    <p class="feature-content">Prediction of the most probable words based on the provided input, without explicit intermediate reasoning.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Exemples de modèles</h3>
+                    <h3 class="feature-title">Model Examples</h3>
                     <ul class="list-disc pl-5 feature-content">
                         <li>GPT-3.5</li>
-                        <li>GPT-4 (versions standard)</li>
+                        <li>GPT-4 (standard versions)</li>
                     </ul>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Cas d'utilisation optimaux</h3>
+                    <h3 class="feature-title">Optimal Use Cases</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Questions simples nécessitant des réponses directes</li>
-                        <li>Tâches basiques et répétitives</li>
-                        <li>Recherche d'informations simples</li>
-                        <li>Résumés de textes courts</li>
+                        <li>Simple questions requiring direct answers</li>
+                        <li>Basic and repetitive tasks</li>
+                        <li>Simple information retrieval</li>
+                        <li>Summaries of short texts</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- COT Models -->
             <div class="ai-card cot-color p-6">
                 <div class="flex flex-col items-center mb-4">
                     <div class="icon-container cot-icon">
                         <i class="fas fa-brain text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center">Modèles Chain of Thought</h2>
-                    <p class="text-sm text-gray-600 text-center">(Chaîne de pensée)</p>
+                    <h2 class="text-2xl font-bold text-center">Chain of Thought Models</h2>
+                    <p class="text-sm text-gray-600 text-center">(Chain of thought)</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Définition</h3>
-                    <p class="feature-content">Des modèles qui ajoutent une étape intermédiaire de réflexion entre l'entrée et la sortie, permettant un raisonnement plus élaboré.</p>
+                    <h3 class="feature-title">Definition</h3>
+                    <p class="feature-content">Models that add an intermediate step of reflection between input and output, allowing for more elaborate reasoning.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Fonctionnement</h3>
+                    <h3 class="feature-title">Operation</h3>
                     <div class="bg-white p-3 rounded-lg shadow-sm mb-2">
-                        <p class="text-center font-medium">Question → Réflexion → Réponse</p>
+                        <p class="text-center font-medium">Question → Reasoning → Answer</p>
                     </div>
-                    <p class="feature-content">L'IA analyse la demande, définit des étapes de raisonnement, puis produit une réponse basée sur ce processus.</p>
+                    <p class="feature-content">The AI analyzes the request, defines reasoning steps, and then produces an answer based on this process.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Exemples de modèles</h3>
+                    <h3 class="feature-title">Model Examples</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Versions antérieures de O1</li>
-                        <li>O3 Mini (premières versions)</li>
+                        <li>Earlier versions of O1</li>
+                        <li>O3 Mini (early versions)</li>
                     </ul>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Cas d'utilisation optimaux</h3>
+                    <h3 class="feature-title">Optimal Use Cases</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Tâches nécessitant du raisonnement</li>
-                        <li>Interprétation d'intentions complexes</li>
-                        <li>Résolution de problèmes logiques</li>
-                        <li>Analyse de données avec contexte</li>
+                        <li>Tasks requiring reasoning</li>
+                        <li>Interpretation of complex intents</li>
+                        <li>Logical problem solving</li>
+                        <li>Data analysis with context</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Agent IA Models -->
             <div class="ai-card agent-color p-6">
                 <div class="flex flex-col items-center mb-4">
                     <div class="icon-container agent-icon">
                         <i class="fas fa-robot text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center">Agents IA</h2>
-                    <p class="text-sm text-gray-600 text-center">(COT Agentiques)</p>
+                    <h2 class="text-2xl font-bold text-center">AI Agents</h2>
+                    <p class="text-sm text-gray-600 text-center">(Agentic COT)</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Définition</h3>
-                    <p class="feature-content">Les modèles les plus avancés, capables non seulement de raisonner mais aussi d'utiliser des outils externes et d'exécuter des actions de manière autonome.</p>
+                    <h3 class="feature-title">Definition</h3>
+                    <p class="feature-content">The most advanced models, capable not only of reasoning but also of using external tools and executing actions autonomously.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Fonctionnement</h3>
+                    <h3 class="feature-title">Operation</h3>
                     <div class="bg-white p-3 rounded-lg shadow-sm mb-2">
-                        <p class="text-center font-medium">Question → Réflexion → Utilisation d'outils → Réponse</p>
+                        <p class="text-center font-medium">Question → Reasoning → Tool Use → Answer</p>
                     </div>
-                    <p class="feature-content">L'IA réfléchit, active et utilise des outils spécifiques de manière autonome pour accomplir des tâches complexes.</p>
+                    <p class="feature-content">The AI thinks, activates, and uses specific tools autonomously to accomplish complex tasks.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Exemples de modèles</h3>
+                    <h3 class="feature-title">Model Examples</h3>
                     <ul class="list-disc pl-5 feature-content">
                         <li>O3</li>
                         <li>O4 Mini</li>
@@ -213,33 +210,33 @@
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Cas d'utilisation optimaux</h3>
+                    <h3 class="feature-title">Optimal Use Cases</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Tâches complexes multiples (plus de 2 actions)</li>
-                        <li>Automatisation de workflows</li>
-                        <li>Projets nécessitant recherche et analyse</li>
-                        <li>Support client, gestion d'emails</li>
-                        <li>Codage et raisonnement visuel complexe</li>
+                        <li>Complex multiple tasks (more than 2 actions)</li>
+                        <li>Workflow automation</li>
+                        <li>Projects requiring research and analysis</li>
+                        <li>Customer support, email management</li>
+                        <li>Coding and complex visual reasoning</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
-            <h3 class="text-xl font-bold mb-4">Comparaison des capacités</h3>
+            <h3 class="text-xl font-bold mb-4">Capabilities Comparison</h3>
             <div class="overflow-auto">
                 <table class="min-w-full bg-white">
                     <thead>
                         <tr>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-gray-100 text-left">Capacité</th>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-blue-50 text-center">Modèles I/O</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-gray-100 text-left">Capability</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-blue-50 text-center">I/O Models</th>
                             <th class="py-2 px-4 border-b-2 border-gray-200 bg-green-50 text-center">Chain of Thought</th>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-purple-50 text-center">Agents IA</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-purple-50 text-center">AI Agents</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Réponses simples</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Simple Answers</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
                                 <i class="fas fa-check text-green-500"></i>
                             </td>
@@ -251,7 +248,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Raisonnement visible</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Visible Reasoning</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
                                 <i class="fas fa-times text-red-500"></i>
                             </td>
@@ -263,7 +260,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Utilisation d'outils</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Tool Use</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
                                 <i class="fas fa-times text-red-500"></i>
                             </td>
@@ -275,24 +272,24 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Tâches complexes</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Complex Tasks</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
                                 <i class="fas fa-times text-red-500"></i>
                             </td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">
-                                <i class="fas fa-check-circle text-yellow-500"></i> Limitées
+                                <i class="fas fa-check-circle text-yellow-500"></i> Limited
                             </td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">
                                 <i class="fas fa-check text-green-500"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Autonomie</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Autonomy</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
                                 <i class="fas fa-times text-red-500"></i>
                             </td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">
-                                <i class="fas fa-check-circle text-yellow-500"></i> Limitée
+                                <i class="fas fa-check-circle text-yellow-500"></i> Limited
                             </td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">
                                 <i class="fas fa-check text-green-500"></i>
@@ -304,14 +301,14 @@
         </div>
 
         <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
-            <h3 class="text-xl font-bold mb-4">Évolution des capacités</h3>
+            <h3 class="text-xl font-bold mb-4">Evolution of Capabilities</h3>
             <div class="flex flex-col md:flex-row items-center justify-around">
                 <div class="text-center p-4">
                     <div class="rounded-full bg-blue-100 p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
                         <i class="fas fa-exchange-alt text-blue-500 text-xl"></i>
                     </div>
-                    <p class="font-bold">Modèles I/O</p>
-                    <p>Simples et directs</p>
+                    <p class="font-bold">I/O Models</p>
+                    <p>Simple and direct</p>
                 </div>
 
                 <div class="hidden md:block text-gray-400">
@@ -326,7 +323,7 @@
                         <i class="fas fa-brain text-green-500 text-xl"></i>
                     </div>
                     <p class="font-bold">Chain of Thought</p>
-                    <p>Réflexion ajoutée</p>
+                    <p>Added reasoning</p>
                 </div>
 
                 <div class="hidden md:block text-gray-400">
@@ -340,14 +337,14 @@
                     <div class="rounded-full bg-purple-100 p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
                         <i class="fas fa-robot text-purple-500 text-xl"></i>
                     </div>
-                    <p class="font-bold">Agents IA</p>
-                    <p>Utilisation d'outils et autonomie</p>
+                    <p class="font-bold">AI Agents</p>
+                    <p>Tool use and autonomy</p>
                 </div>
             </div>
         </div>
 
         <footer class="mt-10 pt-6 border-t border-gray-300 text-center text-gray-600">
-            <p>© 2025, Rochane Kherbouche en partage Creative Commons CC BY SA</p>
+            <p>© 2025, Rochane Kherbouche shared under Creative Commons CC BY SA</p>
         </footer>
     </div>
 </body>
