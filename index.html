@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The different types of AI: comparison</title>
+    <title>Different Types of AI: Comparison</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
     <style>
@@ -26,21 +26,17 @@
         .ai-card:hover {
             transform: translateY(-5px);
         }
-        .io-color {
+        .immediate-color {
             background-color: #e3f2fd;
             border-top: 5px solid #2196f3;
         }
-        .cot-color {
+        .short-color {
             background-color: #e8f5e9;
             border-top: 5px solid #4caf50;
         }
-        .agent-color {
+        .extended-color {
             background-color: #f3e5f5;
             border-top: 5px solid #9c27b0;
-        }
-        .section-title {
-            font-weight: 700;
-            margin-bottom: 1rem;
         }
         .icon-container {
             width: 60px;
@@ -51,15 +47,15 @@
             justify-content: center;
             margin-bottom: 1rem;
         }
-        .io-icon {
+        .immediate-icon {
             background-color: #2196f3;
             color: white;
         }
-        .cot-icon {
+        .short-icon {
             background-color: #4caf50;
             color: white;
         }
-        .agent-icon {
+        .extended-icon {
             background-color: #9c27b0;
             color: white;
         }
@@ -73,172 +69,204 @@
         .feature-content {
             line-height: 1.6;
         }
-        .comparison-arrow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem 0;
+        .modality-badge {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 3px;
         }
-        @media (max-width: 768px) {
-            .comparison-arrow {
-                transform: rotate(90deg);
-                margin: 2rem 0;
-            }
-        }
+        .mod-text { background-color: #3b82f6; }
+        .mod-vision { background-color: #10b981; }
+        .mod-audio { background-color: #f59e0b; }
+        .mod-gen { background-color: #ef4444; }
     </style>
 </head>
 <body>
     <div class="container mx-auto">
         <header class="text-center my-10">
-            <h1 class="text-4xl font-bold mb-4">The different types of AI: comparison</h1>
-            <p class="text-xl text-gray-600 mb-8">An analysis of the three main artificial intelligence models and their applications</p>
+            <h1 class="text-4xl font-bold mb-4">Different Types of AI: Comparison</h1>
+            <p class="text-xl text-gray-600 mb-2">Classification by processing depth and capabilities</p>
+            <p class="text-sm text-gray-500">Updated: November 2025</p>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            <div class="ai-card io-color p-6">
+            <div class="ai-card immediate-color p-6">
                 <div class="flex flex-col items-center mb-4">
-                    <div class="icon-container io-icon">
-                        <i class="fas fa-exchange-alt text-2xl"></i>
+                    <div class="icon-container immediate-icon">
+                        <i class="fas fa-bolt text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center">I/O Models</h2>
-                    <p class="text-sm text-gray-600 text-center">(Input/Output)</p>
+                    <h2 class="text-2xl font-bold text-center">Immediate Response</h2>
+                    <p class="text-sm text-gray-600 text-center">(&lt;2 seconds)</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Definition</h3>
-                    <p class="feature-content">The simplest models in their operation. They receive an input and directly produce an output without a visible intermediate step.</p>
-                </div>
-
-                <div class="feature">
-                    <h3 class="feature-title">Operation</h3>
+                    <h3 class="feature-title">How it works</h3>
                     <div class="bg-white p-3 rounded-lg shadow-sm mb-2">
-                        <p class="text-center font-medium">Question → Direct Answer</p>
+                        <p class="text-center font-medium">Query → Direct Response</p>
                     </div>
-                    <p class="feature-content">Prediction of the most probable words based on the provided input, without explicit intermediate reasoning.</p>
+                    <p class="feature-content">Instant prediction without visible reasoning steps.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Model Examples</h3>
+                    <h3 class="feature-title">Model examples</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>GPT-3.5</li>
-                        <li>GPT-4 (standard versions)</li>
+                        <li>GPT-3.5 Turbo</li>
+                        <li>Claude Haiku</li>
+                        <li>Gemini Flash</li>
                     </ul>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Optimal Use Cases</h3>
+                    <h3 class="feature-title">Use cases</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Simple questions requiring direct answers</li>
-                        <li>Basic and repetitive tasks</li>
-                        <li>Simple information retrieval</li>
-                        <li>Summaries of short texts</li>
+                        <li>Conversational chat</li>
+                        <li>Simple extraction</li>
+                        <li>Direct questions</li>
+                        <li>Basic summaries</li>
                     </ul>
+                </div>
+
+                <div class="feature">
+                    <h3 class="feature-title">Cost</h3>
+                    <p class="feature-content">$0.6-3 / 1M tokens</p>
                 </div>
             </div>
 
-            <div class="ai-card cot-color p-6">
+            <div class="ai-card short-color p-6">
                 <div class="flex flex-col items-center mb-4">
-                    <div class="icon-container cot-icon">
+                    <div class="icon-container short-icon">
                         <i class="fas fa-brain text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center">Chain of Thought Models</h2>
-                    <p class="text-sm text-gray-600 text-center">(Chain of thought)</p>
+                    <h2 class="text-2xl font-bold text-center">Short Reasoning</h2>
+                    <p class="text-sm text-gray-600 text-center">(2-10 seconds)</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Definition</h3>
-                    <p class="feature-content">Models that add an intermediate step of reflection between input and output, allowing for more elaborate reasoning.</p>
-                </div>
-
-                <div class="feature">
-                    <h3 class="feature-title">Operation</h3>
+                    <h3 class="feature-title">How it works</h3>
                     <div class="bg-white p-3 rounded-lg shadow-sm mb-2">
-                        <p class="text-center font-medium">Question → Reasoning → Answer</p>
+                        <p class="text-center font-medium">Query → Analysis (3-8 steps) → Response</p>
                     </div>
-                    <p class="feature-content">The AI analyzes the request, defines reasoning steps, and then produces an answer based on this process.</p>
+                    <p class="feature-content">Visible problem decomposition into multiple reasoning steps.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Model Examples</h3>
+                    <h3 class="feature-title">Model examples</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Earlier versions of O1</li>
-                        <li>O3 Mini (early versions)</li>
+                        <li>GPT-4 Turbo 
+                            <span class="modality-badge mod-text"></span>
+                            <span class="modality-badge mod-vision"></span>
+                        </li>
+                        <li>Claude Sonnet 4.5
+                            <span class="modality-badge mod-text"></span>
+                            <span class="modality-badge mod-vision"></span>
+                        </li>
+                        <li>Gemini 2.0 Flash
+                            <span class="modality-badge mod-text"></span>
+                            <span class="modality-badge mod-vision"></span>
+                            <span class="modality-badge mod-audio"></span>
+                            <span class="modality-badge mod-gen"></span>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Optimal Use Cases</h3>
+                    <h3 class="feature-title">Use cases</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Tasks requiring reasoning</li>
-                        <li>Interpretation of complex intents</li>
-                        <li>Logical problem solving</li>
-                        <li>Data analysis with context</li>
+                        <li>Document analysis</li>
+                        <li>Code generation</li>
+                        <li>Multi-tool tasks</li>
+                        <li>Simple planning</li>
                     </ul>
+                </div>
+
+                <div class="feature">
+                    <h3 class="feature-title">Cost</h3>
+                    <p class="feature-content">$3-15 / 1M tokens</p>
                 </div>
             </div>
 
-            <div class="ai-card agent-color p-6">
+            <div class="ai-card extended-color p-6">
                 <div class="flex flex-col items-center mb-4">
-                    <div class="icon-container agent-icon">
-                        <i class="fas fa-robot text-2xl"></i>
+                    <div class="icon-container extended-icon">
+                        <i class="fas fa-project-diagram text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center">AI Agents</h2>
-                    <p class="text-sm text-gray-600 text-center">(Agentic COT)</p>
+                    <h2 class="text-2xl font-bold text-center">Extended Reasoning</h2>
+                    <p class="text-sm text-gray-600 text-center">(10-120 seconds)</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Definition</h3>
-                    <p class="feature-content">The most advanced models, capable not only of reasoning but also of using external tools and executing actions autonomously.</p>
-                </div>
-
-                <div class="feature">
-                    <h3 class="feature-title">Operation</h3>
+                    <h3 class="feature-title">How it works</h3>
                     <div class="bg-white p-3 rounded-lg shadow-sm mb-2">
-                        <p class="text-center font-medium">Question → Reasoning → Tool Use → Answer</p>
+                        <p class="text-center font-medium">Query → Exploration (10-100+ steps) → Response</p>
                     </div>
-                    <p class="feature-content">The AI thinks, activates, and uses specific tools autonomously to accomplish complex tasks.</p>
+                    <p class="feature-content">Multi-branch exploration with internal validation and backtracking.</p>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Model Examples</h3>
+                    <h3 class="feature-title">Model examples</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>O3</li>
-                        <li>O4 Mini</li>
-                        <li>O4 Mini High</li>
-                        <li>Frameworks: CrewAI, Autogen</li>
+                        <li>GPT-o1
+                            <span class="modality-badge mod-text"></span>
+                            <span class="modality-badge mod-vision"></span>
+                        </li>
+                        <li>GPT-o3
+                            <span class="modality-badge mod-text"></span>
+                            <span class="modality-badge mod-vision"></span>
+                        </li>
+                        <li>Claude Sonnet 4.5 (extended mode)
+                            <span class="modality-badge mod-text"></span>
+                            <span class="modality-badge mod-vision"></span>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="feature">
-                    <h3 class="feature-title">Optimal Use Cases</h3>
+                    <h3 class="feature-title">Use cases</h3>
                     <ul class="list-disc pl-5 feature-content">
-                        <li>Complex multiple tasks (more than 2 actions)</li>
-                        <li>Workflow automation</li>
-                        <li>Projects requiring research and analysis</li>
-                        <li>Customer support, email management</li>
-                        <li>Coding and complex visual reasoning</li>
+                        <li>Scientific research</li>
+                        <li>Mathematical problems</li>
+                        <li>Complex strategy</li>
+                        <li>Multi-step reasoning</li>
                     </ul>
+                </div>
+
+                <div class="feature">
+                    <h3 class="feature-title">Cost</h3>
+                    <p class="feature-content">$15-60 / 1M tokens</p>
                 </div>
             </div>
         </div>
 
         <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
-            <h3 class="text-xl font-bold mb-4">Capabilities Comparison</h3>
+            <h3 class="text-xl font-bold mb-4">Capability Comparison</h3>
             <div class="overflow-auto">
                 <table class="min-w-full bg-white">
                     <thead>
                         <tr>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-gray-100 text-left">Capability</th>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-blue-50 text-center">I/O Models</th>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-green-50 text-center">Chain of Thought</th>
-                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-purple-50 text-center">AI Agents</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-gray-100 text-left">Criterion</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-blue-50 text-center">Immediate</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-green-50 text-center">Short</th>
+                            <th class="py-2 px-4 border-b-2 border-gray-200 bg-purple-50 text-center">Extended</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Simple Answers</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Latency</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">&lt;2s</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">2-10s</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">10-120s</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-200">Reasoning steps</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">0</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">3-8</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">10-100+</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-200">Tool usage</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
-                                <i class="fas fa-check text-green-500"></i>
+                                <i class="fas fa-times text-red-500"></i>
                             </td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">
                                 <i class="fas fa-check text-green-500"></i>
@@ -248,7 +276,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Visible Reasoning</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Complex tasks</td>
                             <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
                                 <i class="fas fa-times text-red-500"></i>
                             </td>
@@ -260,43 +288,22 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Tool Use</td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
-                                <i class="fas fa-times text-red-500"></i>
-                            </td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">
-                                <i class="fas fa-times text-red-500"></i>
-                            </td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">
-                                <i class="fas fa-check text-green-500"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Complex Tasks</td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
-                                <i class="fas fa-times text-red-500"></i>
-                            </td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">
-                                <i class="fas fa-check-circle text-yellow-500"></i> Limited
-                            </td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">
-                                <i class="fas fa-check text-green-500"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 px-4 border-b border-gray-200">Autonomy</td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">
-                                <i class="fas fa-times text-red-500"></i>
-                            </td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">
-                                <i class="fas fa-check-circle text-yellow-500"></i> Limited
-                            </td>
-                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">
-                                <i class="fas fa-check text-green-500"></i>
-                            </td>
+                            <td class="py-2 px-4 border-b border-gray-200">GPQA Diamond (accuracy)</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-blue-50">45-60%</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-green-50">60-75%</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-center bg-purple-50">75-85%</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="mt-4 text-sm text-gray-600">
+                <p class="mb-2"><strong>Modality legend:</strong></p>
+                <p>
+                    <span class="modality-badge mod-text"></span> Text
+                    <span class="modality-badge mod-vision ml-3"></span> Vision
+                    <span class="modality-badge mod-audio ml-3"></span> Audio
+                    <span class="modality-badge mod-gen ml-3"></span> Multimedia generation
+                </p>
             </div>
         </div>
 
@@ -305,10 +312,10 @@
             <div class="flex flex-col md:flex-row items-center justify-around">
                 <div class="text-center p-4">
                     <div class="rounded-full bg-blue-100 p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
-                        <i class="fas fa-exchange-alt text-blue-500 text-xl"></i>
+                        <i class="fas fa-bolt text-blue-500 text-xl"></i>
                     </div>
-                    <p class="font-bold">I/O Models</p>
-                    <p>Simple and direct</p>
+                    <p class="font-bold">Immediate Response</p>
+                    <p class="text-sm">Fast and direct</p>
                 </div>
 
                 <div class="hidden md:block text-gray-400">
@@ -322,8 +329,8 @@
                     <div class="rounded-full bg-green-100 p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
                         <i class="fas fa-brain text-green-500 text-xl"></i>
                     </div>
-                    <p class="font-bold">Chain of Thought</p>
-                    <p>Added reasoning</p>
+                    <p class="font-bold">Short Reasoning</p>
+                    <p class="text-sm">Structured analysis</p>
                 </div>
 
                 <div class="hidden md:block text-gray-400">
@@ -335,16 +342,17 @@
 
                 <div class="text-center p-4">
                     <div class="rounded-full bg-purple-100 p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
-                        <i class="fas fa-robot text-purple-500 text-xl"></i>
+                        <i class="fas fa-project-diagram text-purple-500 text-xl"></i>
                     </div>
-                    <p class="font-bold">AI Agents</p>
-                    <p>Tool use and autonomy</p>
+                    <p class="font-bold">Extended Reasoning</p>
+                    <p class="text-sm">Deep exploration</p>
                 </div>
             </div>
         </div>
 
         <footer class="mt-10 pt-6 border-t border-gray-300 text-center text-gray-600">
-            <p>© 2025, Rochane Kherbouche shared under Creative Commons CC BY SA</p>
+            <p class="mb-1 text-sm">Updated: November 2025</p>
+            <p>© 2025, Rochane Kherbouche under Creative Commons CC BY SA</p>
         </footer>
     </div>
 </body>
